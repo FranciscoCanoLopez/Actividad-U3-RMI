@@ -17,24 +17,43 @@ Automatización: Scripts .bat para compilación y ejecución rápida en Windows.
 📂 Estructura del Proyecto
 
 Actividad RMI/
+
 ├── bin/                          # Clases compiladas (.class)
+
 ├── cliente.policy                # Política de seguridad para el Cliente
+
 ├── servidor.policy               # Política de seguridad para el Servidor
+
 ├── compilar.bat                  # Script de compilación automatizada
+
 ├── ejecutar-cliente.bat          # Script para iniciar el Cliente
+
 ├── ejecutar-servidor.bat         # Script para iniciar el Servidor
+
 ├── README.md                     # Documentación del proyecto
+
 └── src/
+
     └── main/java/com/rmi/
+
         ├── cliente/
+
         │   └── ClienteRMI.java        # Localiza e invoca los métodos remotos
+
         ├── dto/
+
         │   └── MensajeDTO.java        # Objeto serializable que viaja por la red
+
         ├── interfaz/
+
         │   └── IServicioRemoto.java   # Contrato de métodos (extends Remote)
+
         └── servidor/
+
             ├── ServicioRemotoImpl.java # Lógica de los métodos expuestos
+
             └── ServidorRMI.java       # Inicia el registro en el puerto 1099
+            
 
 
 🛠️ Requisitos Previos
